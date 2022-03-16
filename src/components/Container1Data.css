@@ -1,0 +1,54 @@
+#main-container1{
+    border-collapse: collapse;
+    overflow: scroll;
+    position: relative;
+    top: 00px;
+    left: 60px;
+    width: 1400px;
+    height: 612px;
+    background: rgba(218, 216, 216, 0.54);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px; 
+
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container::-webkit-scrollbar {
+    width: 7px;     /* Tamaño del scroll en vertical */
+    /*display: none;   Ocultar scroll */
+}
+
+table{
+    background-color: rgb(204, 203, 203);
+    text-align: left;
+    width: 1290px;
+    position: relative;
+    top: 50px;
+    left: 45px;
+    text-align : center;
+}
+
+th, td{
+    padding: 20px;
+}
+
+thead{
+    background-color:white;
+    border-bottom: solid 8px #000000;
+    color: rgb(0, 0, 0);
+}
+
+tr:nth-child(even){
+    background-color: rgb(221, 221, 221);
+}
+
+tr:hover td{
+    background-color: #909091;
+    color: white;
+}
+

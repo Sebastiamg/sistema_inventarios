@@ -1,4 +1,4 @@
-//Rutas con botones que se desaparecen con cada cambio de pantalla
+//Cometarios de prueba
 import React from "react";
 import {BrowserRouter as Router, Route, Link } from "react-router-dom";
 import NavBar from "./components/navBar";

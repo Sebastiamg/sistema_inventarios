@@ -3,8 +3,8 @@
     overflow: scroll;
     position: relative;
     top: 10px;
-    left: 90px;
-    width: 900px;
+    left: 10px;
+    width: 70%;
     height: 612px;
     background: rgba(218, 216, 216, 0.54);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -15,11 +15,11 @@
 
 .table1{
     background-color: rgb(204, 203, 203);
-    text-align: left;
-    width: 480px;
+    text-align: center;
+    width: 100%;
     position: relative;
-    top: 50px;
-    left: 45px;
+    top: 10px;
+    margin: auto;
     text-align : center;
 }
 
@@ -56,17 +56,22 @@ tr:hover td{
     flex-wrap: wrap;
 }
 
-/*.main-container2::-webkit-scrollbar {
-    width: 7px;     Tamaño del scroll en vertical */
-    /*display: none;   Ocultar scroll 
-}*/
+/* .main-container2::-webkit-scrollbar {
+    width: 7px;     
+    display: none;   
+} */
+
+#main-container2 {
+    width: 27%;
+    position: relative;
+    left: 20px;
+}
 
 .table2{
     background-color: rgb(204, 203, 203);
-    text-align: left;
-    width: 410px;
+    width: 90%;
     position: relative;
     top: 50px;
-    left: 35px;
+    left: 0;
     text-align : center;
 }

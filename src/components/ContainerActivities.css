@@ -8,7 +8,7 @@ div.contenedor{
 	top: 20px;
 	width: 30%;
 	height: 330px;
-	float:left;
+	float: left;
 	-webkit-transition: height .4s;
 	box-sizing: border-box;
 }

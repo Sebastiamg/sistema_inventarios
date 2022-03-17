@@ -1,8 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 .button {
-     border-radius: 25px;
+     border-radius: 10px;
      width: auto;
-     height: auto;
-     padding: 1em;
+     height: 7vmin;
      background-color: #094165;
      color: white;
+     margin: 0 1%;
    }
+

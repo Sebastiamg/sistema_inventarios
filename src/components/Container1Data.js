@@ -3,13 +3,13 @@ import './Container1Data.css';
 function Container1Data (){
     return (
         <div className="container1Data-container">
-            <center><h1><font size="6">Inventary</font></h1></center>
+            <h1><font size="6">Inventary</font></h1>
         <div id="main-container1">
         <table>
             <thead className="thead">
                 <tr>
-                    <th>Ítem</th><th>Marca</th><th>Nombre</th><th>Fecha de Adquisición</th><th>Valor</th><th>Proveedor</th>
-                    <th>Depresiación anual</th><th>Depresiación mensual</th><th>Estado</th><th>Observación</th><th>Asegurado</th>
+                    <th>Item</th><th>Brand</th><th>Name</th><th>Acquisition Date</th><th>Value</th><th>Supplier</th>
+                    <th>Annual Depreciation</th><th>Montly Depreciation</th><th>Status</th><th>Observation</th><th>Insured</th>
                 </tr>
             </thead>
         

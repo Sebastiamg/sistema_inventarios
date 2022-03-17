@@ -8,8 +8,8 @@ const Container2Data = () =>{
         <table className="table1">
             <thead className="thead">
                 <tr>
-                    <th>Ítem</th><th>Marca</th><th>Nombre</th><th>Fecha de Adquisición</th><th>Valor</th><th>Proveedor</th>
-                    <th>Depresiación anual</th><th>Depresiación mensual</th><th>Estado</th><th>Observación</th><th>Asegurado</th>
+                    <th>Item</th><th>Brand</th><th>Name</th><th>Acquisition Date</th><th>Value</th><th>Supplier</th>
+                    <th>Annual Depreciation</th><th>Montly Depreciation</th><th>Status</th><th>Observation</th><th>Insured</th>
                 </tr>
             </thead>
         
@@ -166,7 +166,7 @@ const Container2Data = () =>{
         <div id="main-container2">
         <table className="table2">
             <tr>
-                <th>Ítem</th><th>Data1</th>
+                <th>Item</th><th>Data1</th>
             </tr>
             <tr>
                 <td>Marca</td><td>Data2</td>

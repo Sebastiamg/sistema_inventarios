@@ -1,4 +1,4 @@
-//Cometarios de prueba
+//Comentario en rama
 import React from "react";
 import {BrowserRouter as Router, Route, Link } from "react-router-dom";
 import NavBar from "./components/navBar";
@@ -15,7 +15,7 @@ function App() {
     <Router>
       <Route exact path="/activities">
           <NavBar/> 
-          <windowEmergen/>
+         
           <center><ContainerActivities/></center><br/>
       </Route>
 

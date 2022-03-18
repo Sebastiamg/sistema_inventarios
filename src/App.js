@@ -1,4 +1,4 @@
-//Cometarios de prueba
+//Comentario en rama
 import React from "react";
 import {BrowserRouter as Router, Route, Link } from "react-router-dom";
 import NavBar from "./components/navBar";
@@ -7,7 +7,8 @@ import Container2Data from "./components/Container2Data";
 import ContainerActivities from "./components/ContainerActivities";
 import ContainerIn from "./components/ContainerIn";
 import "./components/button.css"
-import Nuevo from "./components/modal";
+import WindowFilter from "./components/WindowFilter"
+import WindowExport from "./components/WindowExport";
 
 function App() {
   return (
@@ -15,57 +16,41 @@ function App() {
     <Router>
       <Route exact path="/activities">
           <NavBar/> 
-          <windowEmergen/>
+         
           <center><ContainerActivities/></center><br/>
       </Route>
 
       <Route exact path="/activities/humanResources">
-      <NavBar/>
-      <Link to="/activities">
-        <img className ="icon" src="./atras.png" alt="flecha-atras"/> 
+        <NavBar/>
+        <Link to="/activities">
+          <img className ="icon" src="./atras.png" alt="flecha-atras"/> 
         </Link>
           Seleccionaste Recursos HUMANOS
-          <center><Nuevo/></center>
       </Route>
 
       <Route exact path="/activities/expenses">
       <NavBar/> 
-      <div className="group1" align="right">
-          <Link to="/activities/expenses/changeView">
-          <button className="button">Change View</button>
-          </Link>
-          
-          <Link to="/activities/expenses/export">
-          <button className="button">Export</button>
-          </Link>
-          <Link to="/activities/expenses/filter">
-          <button className="button">Filter</button>
-          </Link>
-          <Link to="/activities/expenses/add">
-          <button className="button">Add</button>
-          </Link>
+        <div className="group1">
+            <Link to="/activities/expenses/changeView">
+            <button className="button">Change</button>
+            </Link>
+            <WindowFilter/>
+            <WindowExport/>
         </div>
         <Link to="/activities">
         <img className ="icon" src="atras.png" alt="flecha-atras"/> 
         </Link>
-          <Container1Data/>
-          </Route>
+        <Container1Data/>
+      </Route>
       
       <Route exact path="/activities/expenses/changeView">
         <NavBar/>
         <div className="group1" align="right">
           <Link to="/activities/expenses">
-          <button className="button">Change View</button>
+          <button className="button">Change 2</button>
           </Link>
-          <Link to="/activities/expenses/export">
-          <button className="button">Export</button>
-          </Link>
-          <Link to="/activities/expenses/filter">
-          <button className="button">Filter</button>
-          </Link>
-          <Link to="/activities/expenses/add">
-          <button className="button">Add</button>
-          </Link>
+          <WindowFilter/>
+          <WindowExport/>
         </div>
         <Link to="/activities">
         <img className ="icon" src="atras.png" alt="flecha-atras"/> 
@@ -73,17 +58,6 @@ function App() {
           <Container2Data/> 
       </Route>
 
-      <Route exact path="/activities/expenses/export">
-        Pantalla emergente para ExportaR
-      </Route>
-
-      <Route exact path="/activities/expenses/filter">
-        Pantalla emergente para FiltraR
-      </Route>
-
-      <Route exact path="/activities/expenses/add">
-      Pantalla emergente para AgregaR
-      </Route>
       
       <Route exact path="/activities/fixedAssets">
       <NavBar/> 

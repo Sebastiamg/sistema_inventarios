@@ -23,7 +23,7 @@
     color: white;
     margin: 0 50px;
     display: inline-block;
-    position: fixed;
+    position: relative;
 } 
 
 #btn-add {
@@ -37,6 +37,6 @@
 }
 
 #btn-export {
-  left: 85.3vmax;
+  left: 80vmax;
   margin-left: 10px;
 }

@@ -47,7 +47,7 @@ function App() {
         <NavBar/>
         <div className="group1" align="right">
           <Link to="/activities/expenses">
-          <button className="button">Change 2</button>
+          <button className="button">Change</button>
           </Link>
           <WindowFilter/>
           <WindowExport/>
@@ -71,14 +71,12 @@ function App() {
       <NavBar/> 
       <div className="group1" align="right">
           <Link to="/activities/fixedAssets/inventaryE/changeView">
-          <button className="button">Change View</button>
+          <button className="button">Change</button>
           </Link>
           <Link to="/activities/fixedAssets/inventaryE/export">
           <button className="button" id="btn-export">Export</button>
           </Link>
-          <Link to="/activities/fixedAssets/inventaryE/filter">
-          <button className="button" id="btn-filter">Filter</button>
-          </Link>
+          
           <Link to="/activities/fixedAssets/inventaryE/add">
           <button className="button" id="btn-add">Add</button>
           </Link>
@@ -93,14 +91,12 @@ function App() {
         <NavBar/>
         <div className="group1" align="right">
           <Link to="/activities/fixedAssets/inventaryE">
-          <button className="button">Change View</button>
+          <button className="button">Change</button>
           </Link>
           <Link to="/activities/fixedAssets/inventaryE/export">
           <button className="button" id="btn-export">Export</button>
           </Link>
-          <Link to="/activities/fixedAssets/inventaryE/filter">
-          <button className="button" id="btn-filter">Filter</button>
-          </Link>
+         
           <Link to="/activities/fixedAssets/inventaryE/add">
           <button className="button" id="btn-add">Add</button>
           </Link>
@@ -115,9 +111,7 @@ function App() {
         Pantalla emergente para Exportar
       </Route>
 
-      <Route exact path="/activities/fixedAssets/inventaryE/filter">
-      Pantalla emergente para Filtrar
-      </Route>
+     
 
       <Route exact path="/activities/fixedAssets/inventaryE/add">
       Pantalla emergente para Agregar
@@ -128,14 +122,12 @@ function App() {
       <NavBar/> 
       <div className="group1" align="right">
           <Link to="/activities/fixedAssets/inventaryF/changeView">
-          <button className="button">Change View</button>
+          <button className="button">Change</button>
           </Link>
           <Link to="/activities/fixedAssets/inventaryF/export">
           <button className="button" id="btn-export">Export</button>
           </Link>
-          <Link to="/activities/fixedAssets/inventaryF/filter">
-          <button className="button" id="btn-filter">Filter</button>
-          </Link>
+          
           <Link to="/activities/fixedAssets/inventaryF/add">
           <button className="button" id="btn-add">Add</button>
           </Link>
@@ -150,14 +142,12 @@ function App() {
         <NavBar/>
         <div className="group1" align="right">
           <Link to="/activities/fixedAssets/inventaryF">
-          <button className="button">Change View</button>
+          <button className="button">Change</button>
           </Link>
           <Link to="/activities/fixedAssets/inventaryF/export">
           <button className="button" id="btn-export">Export</button>
           </Link>
-          <Link to="/activities/fixedAssets/inventaryF/filter">
-          <button className="button" id="btn-filter">Filter</button>
-          </Link>
+          
           <Link to="/activities/fixedAssets/inventaryF/add">
           <button className="button" id="btn-add">Add</button>
           </Link>
@@ -172,9 +162,7 @@ function App() {
        Pantalla emergente para Exportar
       </Route>
 
-      <Route exact path="/activities/fixedAssets/inventaryF/filter">
-      Pantalla emergente para filtrar
-      </Route>
+    
 
       <Route exact path="/activities/fixedAssets/inventaryF/add">
       Pantalla emergente para agregar

@@ -2,6 +2,8 @@ import './Container1Data.css';
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Table,Button,Container,Modal,ModalHeader,ModalBody,FormGroup,ModalFooter,} from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 //Datos
 const data = [
@@ -104,6 +106,22 @@ class Container1Data extends React.Component {
         <>
         <h1><font size="6">Inventary</font></h1>
         <Button color="success" id='add' onClick={()=>this.mostrarModalInsertar()}>Add</Button>
+        <div className="table-responsive">
+          <div className="barraBusqueda">
+            <input
+              type="text"
+              placeholder="Buscar"
+              className="textField"
+              name="busqueda"
+              value={this.state.busqueda}
+              onChange={this.onChange}
+            />
+              <button type="button" className="btnBuscar" >
+                {" "}
+                <FontAwesomeIcon icon={faSearch}/>
+              </button>
+          </div>
+        </div>
           <Container id='tablaa'>
             <Table id='table'>
               <thead>

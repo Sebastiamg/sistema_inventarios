@@ -3,11 +3,40 @@
 }
 
 .button {
-     border-radius: 10px;
-     width: auto;
-     height: 7vmin;
-     background-color: #094165;
-     color: white;
-     margin: 0 1%;
+    border-radius: 10px;
+    width: auto;
+    min-height: 39px;
+    background-color: #094165;
+    color: white;
+    margin: 0 50px;
+    display: inline-block;
+    position: absolute;
+    left: 71.5vmax;
+    margin-left: 10px;
    }
 
+#btn-add, #btn-filter, #btn-export {
+  border-radius: 10px;
+    width: auto;
+    min-height: 39px;
+    background-color: #094165;
+    color: white;
+    margin: 0 50px;
+    display: inline-block;
+    position: fixed;
+} 
+
+#btn-add {
+  left: 50vmax;
+  margin-left: 10px;display: none;
+}
+
+#btn-filter {
+  left: 91vmax;
+  margin-left: 10px;
+}
+
+#btn-export {
+  left: 85.3vmax;
+  margin-left: 10px;
+}

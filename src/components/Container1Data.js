@@ -16,6 +16,7 @@ const data = [
 ];
 
 class Container1Data extends React.Component {
+
     //list of characteristics
       state = {
       data: data,
@@ -99,13 +100,12 @@ class Container1Data extends React.Component {
       };
   
     render() {
-      
       return (
         <>
-        <Button color="success" onClick={()=>this.mostrarModalInsertar()}>Add</Button>
         <h1><font size="6">Inventary</font></h1>
-          <Container>
-            <Table>
+        <Button color="success" id='add' onClick={()=>this.mostrarModalInsertar()}>Add</Button>
+          <Container id='tablaa'>
+            <Table id='table'>
               <thead>
                 <tr>
                 <th></th>
@@ -139,7 +139,7 @@ class Container1Data extends React.Component {
 
         <Modal isOpen={this.state.modalActualizar}>
           <ModalHeader>
-           <div><h3>Editar Registro</h3></div>
+           <div><h3>Edit Registration</h3></div>
           </ModalHeader>
 
           <ModalBody>
@@ -195,8 +195,8 @@ class Container1Data extends React.Component {
           </ModalBody>
 
           <ModalFooter>
-            <Button color="primary" onClick={() => this.editar(this.state.form)}>Editar</Button>
-            <Button color="danger" onClick={() => this.cerrarModalActualizar()}>Cancelar</Button>
+            <Button color="primary" onClick={() => this.editar(this.state.form)}>Edit</Button>
+            <Button color="danger" onClick={() => this.cerrarModalActualizar()}>Cancel</Button>
           </ModalFooter>
         </Modal>
 
@@ -204,7 +204,7 @@ class Container1Data extends React.Component {
 
         <Modal isOpen={this.state.modalInsertar}>
           <ModalHeader>
-           <div><h3>Insertar articulo</h3></div>
+           <div><h3>Insert Item</h3></div>
           </ModalHeader>
 
           <ModalBody>
@@ -216,6 +216,11 @@ class Container1Data extends React.Component {
             <FormGroup>
               <label>Brand: </label>
               <input className="form-control" name="brand" type="text" onChange={this.handleChange}/>
+            </FormGroup>
+
+            <FormGroup>
+              <label>Name: </label>
+              <input className="form-control" name="name" type="text" onChange={this.handleChange}/>
             </FormGroup>
             
             <FormGroup>
@@ -260,8 +265,8 @@ class Container1Data extends React.Component {
           </ModalBody>
 
           <ModalFooter>
-            <Button color="primary" onClick={() => this.insertar()} > Insertar </Button>
-            <Button className="btn btn-danger" onClick={() => this.cerrarModalInsertar()} > Cancelar </Button>
+            <Button color="primary" onClick={() => this.insertar()} > Insert </Button>
+            <Button className="btn btn-danger" onClick={() => this.cerrarModalInsertar()} > Cancel </Button>
           </ModalFooter>
         </Modal>
 

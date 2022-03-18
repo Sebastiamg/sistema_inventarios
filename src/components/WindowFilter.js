@@ -26,11 +26,11 @@ class App extends React.Component{
       <>
       <div className="principal">
         <div className="secundario">
-      <Button color="success" onClick={this.abrirModal}>Filter</Button>
+      
 
-      </div></div>
+      </div></div>  
 
-      <Modal isOpen={this.state.abierto} style={modalStyles}>
+      <Modal isOpen={this.state.abierto}>
         <ModalHeader>
         Select data to filter
         </ModalHeader>

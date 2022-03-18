@@ -12,6 +12,12 @@ import WindowExport from "./components/WindowExport";
 
 function App() {
   return (
+
+
+
+
+
+    
     
     <Router>
       <Route exact path="/activities">
@@ -23,7 +29,7 @@ function App() {
       <Route exact path="/activities/humanResources">
         <NavBar/>
         <Link to="/activities">
-          <img className ="icon" src="./atras.png" alt="flecha-atras"/> 
+          <img className ="back" src="back.png" alt="back"/> 
         </Link>
           Seleccionaste Recursos HUMANOS
       </Route>
@@ -38,7 +44,7 @@ function App() {
             <WindowExport/>
         </div>
         <Link to="/activities">
-        <img className ="icon" src="atras.png" alt="flecha-atras"/> 
+        <img className ="back" src="back.png" alt="back"/> 
         </Link>
         <Container1Data/>
       </Route>
@@ -53,7 +59,7 @@ function App() {
           <WindowExport/>
         </div>
         <Link to="/activities">
-        <img className ="icon" src="atras.png" alt="flecha-atras"/> 
+        <img className ="back" src="back.png" alt="back"/> 
         </Link>
           <Container2Data/> 
       </Route>
@@ -62,7 +68,7 @@ function App() {
       <Route exact path="/activities/fixedAssets">
       <NavBar/> 
       <Link to="/activities">
-        <img className ="icon" src="atras.png" alt="flecha-atras"/> 
+        <img className ="back" src="back.png" alt="back"/> 
         </Link>
           <center><ContainerIn/></center>
       </Route>
@@ -84,7 +90,7 @@ function App() {
           </Link>
           </div>
           <Link to="/activities/fixedAssets">
-        <img className ="icon" src="atras.png" alt="flecha-atras"/> 
+        <img className ="back" src="back.png" alt="back"/> 
         </Link>
           <Container1Data/>
       </Route>
@@ -106,7 +112,7 @@ function App() {
           </Link>
           </div>
           <Link to="/activities/fixedAssets">
-        <img className ="icon" src="atras.png" alt="flecha-atras"/> 
+        <img className ="back" src="back.png" alt="back"/> 
         </Link>
           <Container2Data/>
       </Route>
@@ -141,7 +147,7 @@ function App() {
           </Link>
           </div>
           <Link to="/activities/fixedAssets">
-        <img className ="icon" src="atras.png" alt="flecha-atras"/> 
+        <img className ="back" src="back.png" alt="back"/> 
         </Link>
           <Container1Data/>
       </Route>
@@ -163,7 +169,7 @@ function App() {
           </Link>
           </div>
           <Link to="/activities/fixedAssets">
-        <img className ="icon" src="atras.png" alt="flecha-atras"/> 
+        <img className ="back" src="back.png" alt="flecha-atras"/> 
         </Link>
           <Container2Data/>
       </Route>
@@ -184,4 +190,3 @@ function App() {
   );
 }
 export default App;
- 

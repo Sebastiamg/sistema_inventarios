@@ -3,10 +3,13 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Table,Button,Container,Modal,ModalHeader,ModalBody,FormGroup,ModalFooter,} from "reactstrap";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
 //Datos
 const data = [
-    { item: 1, brand: "Data", name: "Data", acquisition_date: "Data", value: "Data", supplier: "Data",
-    annual_de: "Data", montly_de: "Data", statusD: "Data", observation: "Data", insured: "Data"},
+    { item: 1, brand: "hp", name: "monitor", acquisition_date: "2332", value: "233", supplier: "223",
+    annual_de: "60", montly_de: "499", statusD: "activo", observation: "N/A", insured: "Si"},
     { item: 2, brand: "Data", name: "Data", acquisition_date: "Data", value: "Data", supplier: "Data",
     annual_de: "Data", montly_de: "Data", statusD: "Data", observation: "Data", insured: "Data"},
     { item: 3, brand: "Data", name: "Data", acquisition_date: "Data", value: "Data", supplier: "Data",
@@ -88,6 +91,10 @@ class Container1Data extends React.Component {
         lista.push(valorNuevo);
         this.setState({ modalInsertar: false, data: lista });
       }
+
+      //Filter
+     
+
     
       handleChange = (e) => {
         this.setState({
@@ -102,6 +109,27 @@ class Container1Data extends React.Component {
       
       return (
         <>
+        
+        <div className="table-responsive">
+      <div className="barraBusqueda">
+            <input
+              type="text"
+              placeholder="Buscar"
+              className="textField"
+              name="busqueda"
+              value={this.state.busqueda}
+              onChange={this.onChange}
+            />
+            <button type="button" className="btnBuscar" /*onClick={onClear}*/>
+              {" "}
+              <FontAwesomeIcon icon={faSearch} />
+            </button>
+          </div>
+      
+    </div>
+
+
+
         <Button color="success" onClick={()=>this.mostrarModalInsertar()}>Add</Button>
         <h1><font size="6">Inventary</font></h1>
           <Container>

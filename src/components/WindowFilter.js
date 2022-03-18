@@ -1,8 +1,7 @@
 import React from 'react';
-import './App.css';
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, Label} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import './components/windowExport.css'
+import './WindowExport.css'
 
 class App extends React.Component{
   state={
@@ -27,7 +26,7 @@ class App extends React.Component{
       <>
       <div className="principal">
         <div className="secundario">
-      <Button color="success" onClick={this.abrirModal}>Mostrar Modal</Button>
+      <Button color="success" onClick={this.abrirModal}>Filter</Button>
 
       </div></div>
 
@@ -75,9 +74,14 @@ class App extends React.Component{
             <Input type="checkbox"/> 
             <Label for="usuario">&nbsp;&nbsp;Observation&nbsp;&nbsp;</Label><br/>
           </FormGroup>
-
-
         </ModalBody>
+
+        <ModalFooter>
+          <Button color="primary" onClick={this.abrirModal}>Filter</Button>
+          <Button color="secundary" onClick={this.abrirModal}>Close</Button>
+        </ModalFooter>
+
+
       </Modal>
       </>
     )

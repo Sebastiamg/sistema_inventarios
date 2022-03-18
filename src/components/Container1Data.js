@@ -93,7 +93,17 @@ class Container1Data extends React.Component {
       }
 
       //Filter
-     
+     /*  filtrarElementos=()=>{
+        var search=tablaCampeones.filter(item=>{
+          if(item.año.toString().includes(this.state.busqueda) ||
+          item.campeon.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,"").includes(this.state.busqueda) ||
+          item.subcampeon.toLowerCase().includes(this.state.busqueda)
+          ){
+            return item;
+          }
+        });
+        this.setState({campeones: search});
+      } */
 
     
       handleChange = (e) => {
@@ -109,7 +119,9 @@ class Container1Data extends React.Component {
       
       return (
         <>
-        
+
+
+
         <div className="table-responsive">
       <div className="barraBusqueda">
             <input

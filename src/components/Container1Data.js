@@ -2,6 +2,8 @@ import './Container1Data.css';
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Table,Button,Container,Modal,ModalHeader,ModalBody,FormGroup,ModalFooter,} from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 //Datos
 const data = [
@@ -99,13 +101,28 @@ class Container1Data extends React.Component {
       };
   
     render() {
-      
       return (
         <>
-        <Button color="success" onClick={()=>this.mostrarModalInsertar()}>Add</Button>
         <h1><font size="6">Inventary</font></h1>
-          <Container>
-            <Table>
+        <Button color="success" id='add' onClick={()=>this.mostrarModalInsertar()}>Add</Button>
+        <div className="table-responsive">
+          <div className="barraBusqueda">
+            <input
+              type="text"
+              placeholder="Buscar"
+              className="textField"
+              name="busqueda"
+              value={this.state.busqueda}
+              onChange={this.onChange}
+            />
+              <button type="button" className="btnBuscar" >
+                {" "}
+                <FontAwesomeIcon icon={faSearch}/>
+              </button>
+          </div>
+        </div>
+          <Container id='tablaa'>
+            <Table id='table'>
               <thead>
                 <tr>
                 <th></th>
@@ -139,7 +156,7 @@ class Container1Data extends React.Component {
 
         <Modal isOpen={this.state.modalActualizar}>
           <ModalHeader>
-           <div><h3>Editar Registro</h3></div>
+           <div><h3>Edit Registration</h3></div>
           </ModalHeader>
 
           <ModalBody>
@@ -204,7 +221,7 @@ class Container1Data extends React.Component {
 
         <Modal isOpen={this.state.modalInsertar}>
           <ModalHeader>
-           <div><h3>Insertar article</h3></div>
+           <div><h3>Insert Item</h3></div>
           </ModalHeader>
 
           <ModalBody>
@@ -216,6 +233,11 @@ class Container1Data extends React.Component {
             <FormGroup>
               <label>Brand: </label>
               <input className="form-control" name="brand" type="text" onChange={this.handleChange}/>
+            </FormGroup>
+
+            <FormGroup>
+              <label>Name: </label>
+              <input className="form-control" name="name" type="text" onChange={this.handleChange}/>
             </FormGroup>
             
             <FormGroup>

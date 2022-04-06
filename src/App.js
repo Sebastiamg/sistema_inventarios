@@ -23,7 +23,11 @@ function App() {
       <Route exact path="/activities/humanResources">
         <NavBar/>
         <Link to="/activities">
+<<<<<<< HEAD
           <img className ="icon" src="./atras.png" alt="flecha-atras"/> 
+=======
+          <img className ="icon" src="./atras.png" alt="back"/> 
+>>>>>>> 67582a956421fbfbafc1ae12b06ea71523f26e9d
         </Link>
           Seleccionaste Recursos HUMANOS
       </Route>
@@ -38,7 +42,7 @@ function App() {
             <WindowExport/>
         </div>
         <Link to="/activities">
-        <img className ="icon" src="atras.png" alt="flecha-atras"/> 
+        <img className ="icon" src="atras.png" alt="back"/> 
         </Link>
         <Container1Data/>
       </Route>
@@ -47,13 +51,17 @@ function App() {
         <NavBar/>
         <div className="group1" align="right">
           <Link to="/activities/expenses">
+<<<<<<< HEAD
           <button className="button">Change 2</button>
+=======
+          <button className="button">Change</button>
+>>>>>>> 67582a956421fbfbafc1ae12b06ea71523f26e9d
           </Link>
           <WindowFilter/>
           <WindowExport/>
         </div>
         <Link to="/activities">
-        <img className ="icon" src="atras.png" alt="flecha-atras"/> 
+        <img className ="icon" src="atras.png" alt="back"/> 
         </Link>
           <Container2Data/> 
       </Route>
@@ -62,7 +70,7 @@ function App() {
       <Route exact path="/activities/fixedAssets">
       <NavBar/> 
       <Link to="/activities">
-        <img className ="icon" src="atras.png" alt="flecha-atras"/> 
+        <img className ="icon" src="atras.png" alt="back"/> 
         </Link>
           <center><ContainerIn/></center>
       </Route>
@@ -71,20 +79,18 @@ function App() {
       <NavBar/> 
       <div className="group1" align="right">
           <Link to="/activities/fixedAssets/inventaryE/changeView">
-          <button className="button">Change View</button>
+          <button className="button">Change</button>
           </Link>
           <Link to="/activities/fixedAssets/inventaryE/export">
-          <button className="button">Export</button>
+          <button className="button" id="btn-export">Export</button>
           </Link>
-          <Link to="/activities/fixedAssets/inventaryE/filter">
-          <button className="button">Filter</button>
-          </Link>
+          
           <Link to="/activities/fixedAssets/inventaryE/add">
-          <button className="button">Add</button>
+          <button className="button" id="btn-add">Add</button>
           </Link>
           </div>
           <Link to="/activities/fixedAssets">
-        <img className ="icon" src="atras.png" alt="flecha-atras"/> 
+        <img className ="icon" src="atras.png" alt="back"/> 
         </Link>
           <Container1Data/>
       </Route>
@@ -93,20 +99,18 @@ function App() {
         <NavBar/>
         <div className="group1" align="right">
           <Link to="/activities/fixedAssets/inventaryE">
-          <button className="button">Change View</button>
+          <button className="button">Change</button>
           </Link>
           <Link to="/activities/fixedAssets/inventaryE/export">
-          <button className="button">Export</button>
+          <button className="button" id="btn-export">Export</button>
           </Link>
-          <Link to="/activities/fixedAssets/inventaryE/filter">
-          <button className="button">Filter</button>
-          </Link>
+         
           <Link to="/activities/fixedAssets/inventaryE/add">
-          <button className="button">Add</button>
+          <button className="button" id="btn-add">Add</button>
           </Link>
           </div>
           <Link to="/activities/fixedAssets">
-        <img className ="icon" src="atras.png" alt="flecha-atras"/> 
+        <img className ="icon" src="atras.png" alt="back"/> 
         </Link>
           <Container2Data/>
       </Route>
@@ -115,9 +119,7 @@ function App() {
         Pantalla emergente para Exportar
       </Route>
 
-      <Route exact path="/activities/fixedAssets/inventaryE/filter">
-      Pantalla emergente para Filtrar
-      </Route>
+     
 
       <Route exact path="/activities/fixedAssets/inventaryE/add">
       Pantalla emergente para Agregar
@@ -128,20 +130,18 @@ function App() {
       <NavBar/> 
       <div className="group1" align="right">
           <Link to="/activities/fixedAssets/inventaryF/changeView">
-          <button className="button">Change View</button>
+          <button className="button">Change</button>
           </Link>
           <Link to="/activities/fixedAssets/inventaryF/export">
-          <button className="button">Export</button>
+          <button className="button" id="btn-export">Export</button>
           </Link>
-          <Link to="/activities/fixedAssets/inventaryF/filter">
-          <button className="button">Filter</button>
-          </Link>
+          
           <Link to="/activities/fixedAssets/inventaryF/add">
-          <button className="button">Add</button>
+          <button className="button" id="btn-add">Add</button>
           </Link>
           </div>
           <Link to="/activities/fixedAssets">
-        <img className ="icon" src="atras.png" alt="flecha-atras"/> 
+        <img className ="icon" src="atras.png" alt="back"/> 
         </Link>
           <Container1Data/>
       </Route>
@@ -150,20 +150,18 @@ function App() {
         <NavBar/>
         <div className="group1" align="right">
           <Link to="/activities/fixedAssets/inventaryF">
-          <button className="button">Change View</button>
+          <button className="button">Change</button>
           </Link>
           <Link to="/activities/fixedAssets/inventaryF/export">
-          <button className="button">Export</button>
+          <button className="button" id="btn-export">Export</button>
           </Link>
-          <Link to="/activities/fixedAssets/inventaryF/filter">
-          <button className="button">Filter</button>
-          </Link>
+          
           <Link to="/activities/fixedAssets/inventaryF/add">
-          <button className="button">Add</button>
+          <button className="button" id="btn-add">Add</button>
           </Link>
           </div>
           <Link to="/activities/fixedAssets">
-        <img className ="icon" src="atras.png" alt="flecha-atras"/> 
+        <img className ="icon" src="atras.png" alt="back"/> 
         </Link>
           <Container2Data/>
       </Route>
@@ -172,9 +170,7 @@ function App() {
        Pantalla emergente para Exportar
       </Route>
 
-      <Route exact path="/activities/fixedAssets/inventaryF/filter">
-      Pantalla emergente para filtrar
-      </Route>
+    
 
       <Route exact path="/activities/fixedAssets/inventaryF/add">
       Pantalla emergente para agregar

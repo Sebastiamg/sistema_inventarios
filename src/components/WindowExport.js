@@ -2,6 +2,7 @@ import React from 'react';
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, Label} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import './WindowExport.css'
+import './Container1Data'
 
 class WindowExport extends React.Component{
   state={
@@ -26,11 +27,11 @@ class WindowExport extends React.Component{
       <>
       <div className="principal">
         <div className="secundario">
-      <Button color="success" onClick={this.abrirModal}>Export</Button>
+      <Button color="success" id='export' onClick={this.abrirModal}>Export</Button>
 
       </div></div>
 
-      <Modal isOpen={this.state.abierto} style={modalStyles}>
+      <Modal isOpen={this.state.abierto}>
         <ModalHeader>
         Select data to export
         </ModalHeader>

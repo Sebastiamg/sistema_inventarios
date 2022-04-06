@@ -64,5 +64,47 @@ tr:hover td{
 
 h1{
     text-align: center;
+    
 }
 
+#add {
+    display: inline-block;
+    position: absolute;
+    left: 95vmax;
+    top: 23.5vmin;
+    
+}
+
+#export {
+    display: inline-block;
+    position: absolute;
+    left: 79.5vmax;
+    margin-left: 10px;
+}
+
+#filter {
+    display: inline-block;
+    position: absolute;
+    left: 87vmax;
+    margin-left: 10px;
+}
+
+#tablaa {
+    max-width: 98%;
+    position: relative;
+    font-size: 3vmin;
+    display: block;
+}
+
+.btnBuscar{
+    height: 34px;
+    width: 32px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.barraBusqueda{
+float: left;
+padding: 20px;
+}

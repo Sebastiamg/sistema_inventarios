@@ -102,8 +102,9 @@ class Container2Data extends React.Component {
       
       return (
         <>
-        <Button color="success" onClick={()=>this.mostrarModalInsertar()}>Add</Button>
         <h1><font size="6">Inventary</font></h1>
+        <Button color="success" id='add' onClick={()=>this.mostrarModalInsertar()}>Add</Button>
+        
           <Container>
             <Table>
               <thead>

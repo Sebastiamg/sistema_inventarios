@@ -23,11 +23,7 @@ function App() {
       <Route exact path="/activities/humanResources">
         <NavBar/>
         <Link to="/activities">
-<<<<<<< HEAD
-          <img className ="icon" src="./atras.png" alt="flecha-atras"/> 
-=======
           <img className ="icon" src="./atras.png" alt="back"/> 
->>>>>>> 67582a956421fbfbafc1ae12b06ea71523f26e9d
         </Link>
           Seleccionaste Recursos HUMANOS
       </Route>
@@ -51,11 +47,7 @@ function App() {
         <NavBar/>
         <div className="group1" align="right">
           <Link to="/activities/expenses">
-<<<<<<< HEAD
-          <button className="button">Change 2</button>
-=======
           <button className="button">Change</button>
->>>>>>> 67582a956421fbfbafc1ae12b06ea71523f26e9d
           </Link>
           <WindowFilter/>
           <WindowExport/>
